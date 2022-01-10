@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="{{ url_for("static", filename="main.css") }}" />
+		<script type='text/javascript' src="{{ url_for("static", filename="main.js") }}" async></script>
+	</head>
+	<body onload="init();">
+		<h1>Python/Flask sample app</h1>
+		
+		<div class='content-section'>
+			<div class='section'>
+				<h2>Upload image</h2>
+				<div>
+					<form method="POST" action="/upload_image" enctype="multipart/form-data">
+						<p>File: <input type="file" name="file"></p>
+						<p>&nbsp;&nbsp;-- or --</p>
+						<p>URL: <input type="text" name="url"></p>
+						<p><input type="submit" value="Submit"></p>
+					</form>
+				</div>
+			</div>
+			<div class='section'>
+				<h2>Images</h2>
+			
+				<table id='list'>
+				
+				</table>
+			</div>		
+		</div>
+		<div class='bar-section'>
+			<div class='section'>
+				<h2>Info</h2>
+			
+				<div id='infodata'>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,36 @@
+
+body {
+	font-family: sans-serif;
+	background-color: #ececec;
+	}
+	
+.section {
+	margin: 15px;
+	padding: 15px;
+	background-color: #fff;
+	}
+	
+.content-section {
+	vertical-align: top;
+	display: inline-block;
+	width: 600px;
+	}
+	
+.bar-section {
+	vertical-align: top;
+	display: inline-block;
+	width: 300px;
+	}
+	
+h2 {
+	margin-top: 0px;
+	}
+	
+table {
+	width: 100%;
+	}
+	
+table tr th {
+	border-bottom: 1px solid #666;
+	background-color: #ececec;
+	}
