@@ -2,7 +2,7 @@
 
 This is a python/flask app in order to provide a simple example. This example provides a frontend using HTML + CSS + Vanilla Javascript and a backend using Python + Flask.
 
-
+!(https://raw.githubusercontent.com/acoronadoc/python-flask-sample/main/sample.png)
 
 ## API
 
