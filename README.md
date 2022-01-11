@@ -25,6 +25,7 @@ flask run
 - '/upload_image'(POST) Uploads and check image format. If 'url'(String) paramter is present, the image will be download from that URL. If 'file'(File) parameter is present, the file will be uploaded. Just 'url' or 'file' are mandatory.
 - '/list_images'(GET) Returns a JSON list of images. Each register contains an 'id'(Image unique Id) and 'name'(Image name).
 - '/analyse_image/<uuid>'(GET) Returns a JSON Object width image name, image width and image height information.
+- '/download/<uuid>/<filename>'(GET) Return the image.
    
 ## App files
    
