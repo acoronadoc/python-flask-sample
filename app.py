@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, url_for, jsonify
+from flask import Flask, render_template, request, redirect, url_for, jsonify, send_from_directory
 from PIL import Image
 import io
 import os
@@ -67,6 +67,10 @@ def analyseImage(uuid):
        img  = Image.open( os.path.join(os.getcwd(), "data", uuid, name) )
        width, height = img.size
 
-    return jsonify( { "name": name, "width": width, "height": height} )
+    return jsonify( { "name": name, "width": width, "height": height, "uuid": uuid } )
     
-    
+@app.route('/download/<uuid>/<filename>')
+def download(uuid, filename):
+	uploads = os.path.join(os.getcwd(), "data", uuid)
+	return send_from_directory( uploads, filename)
+	

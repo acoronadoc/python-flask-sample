@@ -26,6 +26,7 @@ function renderAnalyse( data ) {
 	s+="<p><strong>Name: </strong>"+data.name+"</p>";
 	s+="<p><strong>Width: </strong>"+data.width+"</p>";
 	s+="<p><strong>Height: </strong>"+data.height+"</p>";
+	s+="<p> <img src='/download/"+data.uuid+"/"+data.name+"' style='max-width: 200px; height: auto;'> </p>";
 	
 	document.getElementById("infodata").innerHTML=s;
 	}
